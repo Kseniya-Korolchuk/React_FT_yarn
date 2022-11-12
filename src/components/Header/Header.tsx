@@ -7,6 +7,7 @@ import BtnLogIn from './Menu/BtnLogIn';
 import BtnLogOut from './Menu/BtnLogOut';
 import BtnProfile from './Menu/BtnProfile';
 import BtnSignUp from './Menu/BtnSignUp';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   console.log(styles);
@@ -16,9 +17,11 @@ function Header() {
       <Toolbar className={styles.toolbar}>
         <div className={styles.toolbarItem}>
           <Home fontSize="large" />
-          <Button variant="text" sx={{ color: 'white', fontSize: '1.3rem', fontWeight: '400' }}>
-            ГЛАВНАЯ
-          </Button>
+          <NavLink to="boards">
+            <Button variant="text" sx={{ color: 'white', fontSize: '1.3rem', fontWeight: '400' }}>
+              ГЛАВНАЯ
+            </Button>
+          </NavLink>
         </div>
         <div className={styles.toolbarItem} style={{ marginLeft: 'auto' }}>
           <Language fontSize="large" />

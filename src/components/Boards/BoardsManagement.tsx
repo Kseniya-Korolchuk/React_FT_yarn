@@ -12,7 +12,7 @@ export default function BoardsManagement() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{ height: '100vh' }}>
         <h1
           style={{
             display: 'flex',
